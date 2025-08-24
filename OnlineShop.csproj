@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>OnlineShop</RootNamespace>
+    <NoWarn>$(NoWarn);SYSLIB0021</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.13" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\Galaxy-S20-FE-%28SM-G780GZBDSEK%29.jpg" />
+    <None Include="wwwroot\images\Galaxy-S21-Phantom-%28SM-G991BZWGSEK%29.jpg" />
+    <None Include="wwwroot\images\iPhone-11-64GB-Slim-Box-%28MHDG3%29.jpg" />
+    <None Include="wwwroot\images\iphone-12-mini-purple.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
